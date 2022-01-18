@@ -5,6 +5,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.image-dex2oat-filter=quicken \
     ro.sys.fw.dex2oat_thread_count=8
 
+# Disable blur on app launch
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.launcher.blur.appLaunch=0
+
 # GFX
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.config.avoid_gfx_accel=true
