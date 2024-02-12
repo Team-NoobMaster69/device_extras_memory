@@ -13,6 +13,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.config.avoid_gfx_accel=true
 
+# Deep Sleep
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    pm.sleep_mode=1
+
 # Render
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.cpurend.vsync=false
