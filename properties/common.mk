@@ -5,6 +5,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.image-dex2oat-filter=quicken \
     ro.sys.fw.dex2oat_thread_count=8
 
+# GFX
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.config.avoid_gfx_accel=true
+
 # Render
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.cpurend.vsync=false
