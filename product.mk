@@ -5,3 +5,6 @@
 #
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# Properties
+include $(LOCAL_PATH)/properties/common.mk
