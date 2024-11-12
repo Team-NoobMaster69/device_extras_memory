@@ -6,6 +6,9 @@
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Init
+PRODUCT_PACKAGES += init.device.perf.rc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
