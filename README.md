@@ -3,7 +3,7 @@
 Add inherit on your device.mk:
 
 ```makefile
-include device/extras/memory/product.mk
+$(call inherit-product, device/extras/memory/product.mk)
 ```
 
 The need for this repository to be necessary.
