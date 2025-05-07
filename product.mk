@@ -12,8 +12,8 @@ PRODUCT_PACKAGES += init.device.perf.rc
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Optimize everything for preopt
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+# Optimize for preopt
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Properties
 include $(LOCAL_PATH)/properties/common.mk
@@ -22,4 +22,3 @@ include $(LOCAL_PATH)/properties/common.mk
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
-PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
